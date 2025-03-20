@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ECF0F1; /* Light Gray */
+    color: #2C3E50; /* Text Color */
+}
+h1 {
+    color: #ECF0F1;
+}
+h2, h3 {
+    color: #2C3E50;
+}
+p {
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #2C3E50; /* Primary Color */
+    padding: 10px 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #ECF0F1; /* Light Gray */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #E67E22; /* Accent */
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #2C3E50, #34495E); /* Sleek Gradient */
+    color: #ECF0F1;
+    text-align: center;
+    padding: 60px 20px;
+}
+.hero-content h1 {
+    font-size: 2.8em;
+    margin: 0;
+}
+.hero-content p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+.hero-content .btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #E67E22;
+    color: #ECF0F1;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.hero-content .btn:hover {
+    background-color: #D35400; /* Darker Orange */
+    transform: scale(1.05);
+}
+
+/* About Section */
+#about {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+.project-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+}
+.project-card {
+    background-color: #ECF0F1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+.project-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #34495E;
+    color: #ECF0F1;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+
+}
+
+/* Responsive Design: Media Queries */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2em;
+    }
+    .hero-content p {
+        font-size: 1em;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .hero-content h1 {
+        font-size: 1.8em;
+    }
+    .hero-content p {
+        font-size: 0.9em;
+    }
+    .hero-content .btn {
+        padding: 8px 15px;
+    }
+}
